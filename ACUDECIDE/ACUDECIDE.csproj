@@ -1,0 +1,543 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{72D9C071-2123-4AFB-A5D6-A0911207AA9D}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ACUDECIDE</RootNamespace>
+    <AssemblyName>ACUDECIDE</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <TargetFrameworkProfile />
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ProductName>ACUSA DECIDES</ProductName>
+    <PublisherName>Ayinla Kwamdeen</PublisherName>
+    <SuiteName>Ayinla Kwamdeen</SuiteName>
+    <ApplicationRevision>12</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <CreateDesktopShortcut>true</CreateDesktopShortcut>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>64F7850D0654DE88D40271E5D73C4911CA3FE18C</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>ACUDECIDE_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>true</SignManifests>
+  </PropertyGroup>
+  <PropertyGroup />
+  <PropertyGroup>
+    <TargetZone>LocalIntranet</TargetZone>
+  </PropertyGroup>
+  <PropertyGroup />
+  <PropertyGroup />
+  <PropertyGroup>
+    <ApplicationManifest>Properties\app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>Dakirby309-Windows-8-Metro-Folders-OS-Security-Approved-Metro.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="dpfpdevnet, Version=1.6.1.0, Culture=neutral, PublicKeyToken=696774c42ee28c57, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\DigitalPersona\Bin\COM-ActiveX\dpfpdevnet.dll</HintPath>
+    </Reference>
+    <Reference Include="dpfpengnet, Version=1.6.1.0, Culture=neutral, PublicKeyToken=7fe76e7adf19964b, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\DigitalPersona\Bin\COM-ActiveX\dpfpengnet.dll</HintPath>
+    </Reference>
+    <Reference Include="dpfpguinet, Version=1.6.1.0, Culture=neutral, PublicKeyToken=d4f4a0bd9c559145, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\DigitalPersona\Bin\COM-ActiveX\dpfpguinet.dll</HintPath>
+    </Reference>
+    <Reference Include="dpfpshrnet, Version=1.6.1.0, Culture=neutral, PublicKeyToken=d902fe275a8d6cf2, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\DigitalPersona\Bin\COM-ActiveX\dpfpshrnet.dll</HintPath>
+    </Reference>
+    <Reference Include="dpfpvernet">
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\DigitalPersona\Bin\COM-ActiveX\dpfpvernet.dll</HintPath>
+    </Reference>
+    <Reference Include="dpfpvernet%281%29">
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\DigitalPersona\Bin\COM-ActiveX\dpfpvernet(1).dll</HintPath>
+    </Reference>
+    <Reference Include="Google.Protobuf, Version=3.5.1.0, Culture=neutral, PublicKeyToken=a7d26565bac4d604, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\MySQL\MySQL Connector Net 8.0.11\Assemblies\v4.5.2\Google.Protobuf.dll</HintPath>
+    </Reference>
+    <Reference Include="MySql.Data, Version=8.0.11.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\MySQL\MySQL Connector Net 8.0.11\Assemblies\v4.5.2\MySql.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="MySql.Data.EntityFramework, Version=8.0.11.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\MySQL\MySQL Connector Net 8.0.11\Assemblies\v4.5.2\MySql.Data.EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="MySQL.Data.EntityFrameworkCore, Version=8.0.11.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\MySQL\MySQL Connector Net 8.0.11\Assemblies\v4.5.2\MySQL.Data.EntityFrameworkCore.dll</HintPath>
+    </Reference>
+    <Reference Include="MySQL.Data.EntityFrameworkCore.Design, Version=8.0.11.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\MySQL\MySQL Connector Net 8.0.11\Assemblies\v4.5.2\MySQL.Data.EntityFrameworkCore.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="MySql.Web, Version=8.0.11.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\MySQL\MySQL Connector Net 8.0.11\Assemblies\v4.5.2\MySql.Web.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AcudbDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AcudbDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="AcudbDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AcudbDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="AcudbDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AcudbDataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="AcudbDataSet31.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AcudbDataSet31.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="AcudbDataSet4.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AcudbDataSet4.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="AcudbDataSet51.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AcudbDataSet51.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="AcudbDataSet6.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AcudbDataSet6.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Addcandidate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Addcandidate.Designer.cs">
+      <DependentUpon>Addcandidate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Addcandidate2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Addcandidate2.Designer.cs">
+      <DependentUpon>Addcandidate2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddVoter.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddVoter.Designer.cs">
+      <DependentUpon>AddVoter.cs</DependentUpon>
+    </Compile>
+    <Compile Include="candidates.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="candidates.Designer.cs">
+      <DependentUpon>candidates.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Captureform.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Captureform.Designer.cs">
+      <DependentUpon>Captureform.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CaptureForm2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CaptureForm2.Designer.cs">
+      <DependentUpon>CaptureForm2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Class1.cs" />
+    <Compile Include="Clscs.cs" />
+    <Compile Include="elect.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="elect.Designer.cs">
+      <DependentUpon>elect.cs</DependentUpon>
+    </Compile>
+    <Compile Include="election.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="election.Designer.cs">
+      <DependentUpon>election.cs</DependentUpon>
+    </Compile>
+    <Compile Include="election2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="election2.Designer.cs">
+      <DependentUpon>election2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form2.Designer.cs">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Home.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Home.Designer.cs">
+      <DependentUpon>Home.cs</DependentUpon>
+    </Compile>
+    <Compile Include="interVote.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="interVote.Designer.cs">
+      <DependentUpon>interVote.cs</DependentUpon>
+    </Compile>
+    <Compile Include="posistion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="posistion.Designer.cs">
+      <DependentUpon>posistion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Results.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Results.Designer.cs">
+      <DependentUpon>Results.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Results2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Results2.Designer.cs">
+      <DependentUpon>Results2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Settings.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Settings.Designer.cs">
+      <DependentUpon>Settings.cs</DependentUpon>
+    </Compile>
+    <Compile Include="voter.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="voter.Designer.cs">
+      <DependentUpon>voter.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Addcandidate.resx">
+      <DependentUpon>Addcandidate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Addcandidate2.resx">
+      <DependentUpon>Addcandidate2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddVoter.resx">
+      <DependentUpon>AddVoter.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="candidates.resx">
+      <DependentUpon>candidates.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Captureform.resx">
+      <DependentUpon>Captureform.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CaptureForm2.resx">
+      <DependentUpon>CaptureForm2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="elect.resx">
+      <DependentUpon>elect.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="election.resx">
+      <DependentUpon>election.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="election2.resx">
+      <DependentUpon>election2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form2.resx">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Home.resx">
+      <DependentUpon>Home.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="interVote.resx">
+      <DependentUpon>interVote.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="posistion.resx">
+      <DependentUpon>posistion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Results.resx">
+      <DependentUpon>Results.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Results2.resx">
+      <DependentUpon>Results2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Settings.resx">
+      <DependentUpon>Settings.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="voter.resx">
+      <DependentUpon>voter.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="AcudbDataSet.xsc">
+      <DependentUpon>AcudbDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="AcudbDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>AcudbDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="AcudbDataSet.xss">
+      <DependentUpon>AcudbDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="AcudbDataSet1.xsc">
+      <DependentUpon>AcudbDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="AcudbDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>AcudbDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="AcudbDataSet1.xss">
+      <DependentUpon>AcudbDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="AcudbDataSet2.xsc">
+      <DependentUpon>AcudbDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="AcudbDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>AcudbDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="AcudbDataSet2.xss">
+      <DependentUpon>AcudbDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="AcudbDataSet3.xsc">
+      <DependentUpon>AcudbDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="AcudbDataSet3.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="AcudbDataSet3.xss">
+      <DependentUpon>AcudbDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="AcudbDataSet31.xsc">
+      <DependentUpon>AcudbDataSet31.xsd</DependentUpon>
+    </None>
+    <None Include="AcudbDataSet31.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>AcudbDataSet31.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="AcudbDataSet31.xss">
+      <DependentUpon>AcudbDataSet31.xsd</DependentUpon>
+    </None>
+    <None Include="AcudbDataSet4.xsc">
+      <DependentUpon>AcudbDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="AcudbDataSet4.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>AcudbDataSet4.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="AcudbDataSet4.xss">
+      <DependentUpon>AcudbDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="AcudbDataSet5.xsc">
+      <DependentUpon>AcudbDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="AcudbDataSet5.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="AcudbDataSet5.xss">
+      <DependentUpon>AcudbDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="AcudbDataSet51.xsc">
+      <DependentUpon>AcudbDataSet51.xsd</DependentUpon>
+    </None>
+    <None Include="AcudbDataSet51.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>AcudbDataSet51.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="AcudbDataSet51.xss">
+      <DependentUpon>AcudbDataSet51.xsd</DependentUpon>
+    </None>
+    <None Include="AcudbDataSet6.xsc">
+      <DependentUpon>AcudbDataSet6.xsd</DependentUpon>
+    </None>
+    <None Include="AcudbDataSet6.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>AcudbDataSet6.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="AcudbDataSet6.xss">
+      <DependentUpon>AcudbDataSet6.xsd</DependentUpon>
+    </None>
+    <None Include="ACUDECIDE_TemporaryKey.pfx" />
+    <None Include="Properties\app.manifest" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="DPFPCtlXLib">
+      <Guid>{B49E66FF-6927-4378-9685-937F14679ADD}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="DPFPDevXLib">
+      <Guid>{BCDEF2D4-F788-4A38-B0C2-C97B3F9FB791}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="DPFPEngXLib">
+      <Guid>{A9EFB3F6-A8C8-4684-841E-4330973057C6}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="DPFPShrXLib">
+      <Guid>{B8FAC44B-A9C5-478E-A9BF-566419996CAE}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Acudb.mdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Acudb_log.ldf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <DependentUpon>Acudb.mdf</DependentUpon>
+    </Content>
+    <Content Include="Dakirby309-Windows-8-Metro-Folders-OS-Security-Approved-Metro.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.0">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.0,KB2468871">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4 %28x86 and x64%29 and Update for .NET Framework 4 %28KB2468871%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.5.2">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.5.2 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
